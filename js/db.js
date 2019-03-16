@@ -9,6 +9,10 @@ request.onupgradeneeded = function(e) {
 
         // create index for name
         os.createIndex('name', 'name', {unique: false});
+        os.createIndex('email', 'email', {unique: true});
+        os.createIndex('day', 'day', {unique: false});
+        os.createIndex('month', 'month', {unique: false});
+        os.createIndex('year', 'year', {unique: false});
     }
 }
 
