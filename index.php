@@ -13,10 +13,14 @@
         <div id="output"></div>
     </div>
 
-    <button onClick="addLog()">Add Log</button>
-    <button onClick="clearLogs()">Clear Log</button>
+    <button onClick="addData('logs')">Inset data</button>
+    <button onClick="getAll('logs')">Get all data</button>
+    <button onClick="findById('logs', 1)">Find by Object ID</button>
+    <button onClick="updateData('logs', 1)">Update by Object ID</button>
+    <button onClick="deleteData('logs', 1)">Remove data by id</button>
+    <button onClick="deleteDb('logdata')">Drop database</button>
     
-    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/db.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
